@@ -1,59 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>28 March 2019</title>
-  </head>
-  <body>
+</head>
+<body>
     <h1>28 March 2019</h1>
-    <p>Lorem ipsum.:</p>
-    <p>Changes from branch issue1</p>
-    <a href="https://google.com">Google</a><br />
-    <h2>Working calculator</h2>
-    <input
-      id="results"
-      type="text"
-      placeholder="show results"
-      size="30"
-      disabled
-    />
-    <table onclick="getButtonValue()">
-      <tr>
-        <td><button type="button" value="1">1</button></td>
-        <td><button type="button" value="2">2</button></td>
-        <td><button type="button" value="3">3</button></td>
-        <td><button type="button" value="+">+</button></td>
-      </tr>
-      <tr>
-        <td><button type="button" value="4">4</button></td>
-        <td><button type="button" value="5">5</button></td>
-        <td><button type="button" value="6">6</button></td>
-        <td><button type="button" value="-">-</button></td>
-      </tr>
-      <tr>
-        <td><button type="button" value="7">7</button></td>
-        <td><button type="button" value="8">8</button></td>
-        <td><button type="button" value="9">9</button></td>
-        <td><button type="button" value="x">x</button></td>
-      </tr>
-      <tr>
-        <td><button type="button" value="c">c</button></td>
-        <td><button type="button" value="0">0</button></td>
-        <td><button type="button" value="=">=</button></td>
-        <td><button type="button" value="/">/</button></td>
-      </tr>
-    </table>
-
-    <script>
-      const results = document.getElementById("results");
-      const getButtonValue = () => {
-        const value = event.target.value;
-        if (value !== "=" && value !== "c") results.value += value;
-        if (value === "=") results.value = eval(results.value);
-        if (value === "c") results.value = "";
-      };
-    </script>
-  </body>
+    <p>Conflict may occure</p>
+</body>
 </html>
