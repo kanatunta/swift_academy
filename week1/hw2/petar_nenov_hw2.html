@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Forms and tables</title>
+    <script>
+      //mock api response
+      const apiResponse = {
+        data: [
+          {
+            name: "Paperclips",
+            qty: "1000",
+            tax: "0.01"
+          },
+          {
+            name: "Stapless",
+            qty: "100",
+            tax: "1.00"
+          },
+          {
+            name: "Tape",
+            qty: "200",
+            tax: "0.20"
+          },
+          {
+            name: "Pen",
+            qty: "350",
+            tax: "0.15"
+          }
+        ]
+      };
+    </script>
+  </head>
+  <body>
+    <h1 id="home">Homework Two</h1>
+    <a href="#1">Pet competition</a>
+    <a href="#2">Nested tables</a>
+    <a href="#3">Complex tables</a>
+    <a href="#4">Colorfull tables</a>
+    <a href="#5">Dynamic build tables</a>
+    <hr />
+    <h2 id="1">Pet competition form</h2>
+    <form>
+      <label for="name-animal">Name of animal: </label>
+      <input id="name-animal" type="text" /><br /><br />
+      <label for="type-animal">Type of animal: </label>
+      <input id="type-animal" type="radio" name="animals" checked /> Dog
+      <input type="radio" name="animals" />Cat<br /><br />
+      <label for="age-animal">Age of animal: </label>
+      <input
+        id="age-animal"
+        type="number"
+        max="5"
+        placeholder="younger than 5 years"
+      /><br /><br />
+      <textarea
+        placeholder="Enter a few words decribing your pet"z
+        rows="8"
+        cols="40"
+      ></textarea
+      ><br /><br />
+      <input id="agree-animal" type="checkbox" />
+      <label for="agree-animal"
+        >I agree with the terms of the competitions</label
+      ><br /><br />
+      <input id="submit-animal" type="submit" value="Apply" />
+      <input id="reset-animal" type="reset" value="Clear" /><br /><br />
+    </form>
+    <a href="#home">Goto Top</a>
+    <hr />
+    <h2>Tables</h2>
+    <h3 id="2">A nested table</h3>
+    <table border="1px">
+      <thead>
+        <tr>
+          <th>Invoice #123456789</th>
+          <th>14 January 2015</th>
+        </tr>
+      </thead>
+     <tbody>
+        <tr>
+          <td>
+            <table border="1px">
+              <tr>
+                <th>Pay to:</th>
+                <td>
+                  <table>
+                    <tr>
+                      <td>Foobar biling Co.</td>
+                    </tr>
+                    <tr>
+                      <td>123 Main str.</td>
+                    </tr>
+                    <tr>
+                      <td>Cityville, NA 12345</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table border="1px">
+              <tr>
+                <th>Customer:</th>
+                <td>
+                  <table>
+                    <tr>
+                      <td>John Smit</td>
+                    </tr>
+                    <tr>
+                      <td>321 Willow Way</td>
+                    </tr>
+                    <tr>
+                      <td>Soth London, MA 12345</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table> 
+    <a href="#home">Goto Top</a>
+    <hr />
+    <h2 style="color: rgb(212, 205, 99)">Bonus homework</h2>
+    <h3 id="3">A complex table</h3>
+    <table border="1px">
+      <thead>
+        <tr>
+          <th>Name / Description</th>
+          <th>Qty.</th>
+          <th>@</th>
+          <th>Cost</thz
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Paperclips</td>
+          <td>1000</td>
+          <td>0.01</td>
+          <td>10.00</td>
+        </tr>
+        <tr>
+          <td>Stapless (box)</td>
+          <td>100</td>
+          <td>1.00</td>
+          <td>100.00</td>
+        </tr>
+        <tr>
+          <th colspan="3">Subtotal</th>
+          <td>110.00</td>
+        </tr>
+        <tr>
+          <th colspan="2">Tax</th>
+          <td>8%</td>
+          <td>8.80</td>
+        </tr>
+        <tr>
+          <th colspan="3">Grand Total</th>
+          <td>$118.80</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <a href="#home">Goto Top</a>
+    <h2 style="color: red">Mega Bonus homework</h2>
+    <h3 id="4">A colorfull table</h3>
+    <table border="1px">
+      <thead>
+        <tr style="background-color: lightgray">
+          <th>Name / Description</th>
+          <th>Qty.</th>
+          <th>@</th>
+          <th>Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Paperclips</td>
+          <td>1000</td>
+          <td>0.01</td>
+          <td>10.00</td>
+        </tr>
+        <tr>
+          <td>Stapless (box)</td>
+          <td>100</td>
+          <td>1.00</td>
+          <td>100.00</td>
+        </tr>
+        <tr style="background-color: lightyellow">
+          <th colspan="3">Subtotal</th>
+          <td>110.00</td>
+        </tr>
+        <tr>
+          <th colspan="2" style="background-color: lightgreen">Tax</th>
+          <td style="background-color: red">8%</td>
+          <td style="background-color: lightgreen">8.80</td>
+        </tr>
+        <tr style="background-color: lightblue">
+          <th colspan="3">Grand Total</th>
+          <td>$118.80</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <hr />
+    <a href="#home">Goto Top</a>
+    <h2>Extended Mega Bonus homework</h2>
+    <h3 id="5">Create table dynamicly, by recieving response from API</h3>
+    <button
+      id="create-table-dynamicly"
+      type="button"
+      onclick="buildTAbleDynamicly()"
+    >
+      Create Table Dynamicly
+    </button>
+    <div id="dynamic-build-table"></div>
+    <a href="#home">Goto Top</a>
+    <hr />
+    <script>
+      const buildTAbleDynamicly = () => {
+        const theadsText = ["Name / Descriptioin", "Qty.", "@", "Cost"];
+        const entryPoint = document.getElementById("dynamic-build-table");
+
+        const table = document.createElement("table");
+        table.setAttribute("border", "1px");
+
+        const thead = document.createElement("thead");
+        const tbody = document.createElement("tbody");
+        ///////////////////////////////////////
+        //todo buid head row
+        const thr = document.createElement("tr");
+        theadsText.map(e => {
+          const thh = document.createElement("th");
+          thh.innerHTML = e;
+          thr.appendChild(thh);
+        });
+        thead.append(thr);
+        ///////////////////////////////////////
+        //todo build rows
+        apiResponse.data.map(e => {
+          const tr = document.createElement("tr");
+          let cost = e.qty * e.tax;
+          for (const key in e) {
+            const td = document.createElement("td");
+            td.innerHTML = e[key];
+            tr.appendChild(td);
+          }
+          const td = document.createElement("td");
+          td.innerHTML = cost.toFixed(2);
+          tr.appendChild(td);
+          tbody.appendChild(tr);
+        });
+        /////////////////////////////////////
+        //todo build subtotal row
+        const strSubtotal = "Subtotal";
+        const subtotal = apiResponse.data.reduce((acc, e) => {
+          acc += e.qty * e.tax;
+          return acc;
+        }, 0);
+        const trsbtl = document.createElement("tr");
+        const thsbtl = document.createElement("th");
+        thsbtl.setAttribute("colspan", "3");
+        thsbtl.innerHTML = strSubtotal;
+        trsbtl.appendChild(thsbtl);
+        const tdsbtl = document.createElement("td");
+        tdsbtl.innerHTML = subtotal.toFixed(2);
+        trsbtl.appendChild(tdsbtl);
+        tbody.appendChild(trsbtl);
+        ///////////////////////////////////////
+        //todo build tax row
+        const strTax = "Tax";
+        const numTax = "8";
+        const totalTax = (subtotal * numTax) / 100;
+        const trt = document.createElement("tr");
+        const tht = document.createElement("th");
+        tht.setAttribute("colspan", "2");
+        tht.innerHTML = strTax;
+        trt.appendChild(tht);
+        const tdtp = document.createElement("td");
+        tdtp.innerHTML = numTax + "%";
+        const tdtt = document.createElement("td");
+        tdtt.innerHTML = totalTax.toFixed(2);
+        trt.appendChild(tdtp);
+        trt.appendChild(tdtt);
+        tbody.appendChild(trt);
+        ///////////////////////////////////////
+        //todo build grand total
+        const strGrandTotal = "Grand Total";
+        const trgtl = document.createElement("tr");
+        const thgtl = document.createElement("th");
+        const grandTotal = subtotal + totalTax;
+        thgtl.setAttribute("colspan", "3");
+        thgtl.innerHTML = strGrandTotal;
+        trgtl.appendChild(thgtl);
+        const tdgtl = document.createElement("td");
+        tdgtl.innerHTML = grandTotal.toFixed(2);
+        trgtl.appendChild(tdgtl);
+        tbody.appendChild(trgtl);
+        ///////////////////////////////////////
+        table.appendChild(thead);
+        table.appendChild(tbody);
+        entryPoint.appendChild(table);
+        //create table only ones and switch button disabled
+        document
+          .getElementById("create-table-dynamicly")
+          .setAttribute("disabled", "");
+      };
+    </script>
+  </body>
+</html>
