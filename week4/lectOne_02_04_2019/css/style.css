@@ -1,3 +1,49 @@
 h1 {
   color: brown;
 }
+
+h2 {
+  color: green;
+}
+p {
+  display: inline;
+  color: white;
+  background-color: blue;
+  text-transform: capitalize;
+}
+
+.centred {
+  text-align: center;
+}
+
+select option {
+  color: orange;
+}
+
+option {
+  color: blueviolet;
+}
+
+table {
+  border: 1px solid black;
+}
+
+.centred .blue {
+  color: blue;
+}
+
+.red {
+    color: red;
+}
+
+.upperCase {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-style: bold;
+}
+
+[title="title"]{
+    font-size: 30px;
+}
