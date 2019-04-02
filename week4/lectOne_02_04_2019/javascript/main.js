@@ -1,5 +1,5 @@
 const interAct = () => {
-  alert(event.target.innerHTML);
+  console.log(event.target.innerHTML);
 };
 
 const arr = [1, 2, 3, 4, 5, 6];
