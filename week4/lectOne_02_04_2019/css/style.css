@@ -41,7 +41,7 @@ table {
 }
 
 .bold {
-    font-style: bold;
+    font-weight: bold;
 }
 
 [title="title"]{
