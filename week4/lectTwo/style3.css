@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+.in {
+  background-color: aquamarine;
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+}
+
+.relat {
+  position: relative;
+  top: 10px;
+  left: 30px;
+}
+
+.abs {
+  position: absolute;
+  top: 55px;
+  left: 40px;
+}
+
+.top {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.red {
+  background-color: red;
+}
+
+.fix{
+    position: fixed;
+    top: 250px;
+    left: 100px;
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+}
