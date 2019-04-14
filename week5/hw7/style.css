@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  display: block;
+  width: 306px;
+  height: 408px;
+  border: 3px solid grey;
+  margin: auto;
+  background-color: grey;
+}
+
+tr {
+  display: inline-block;
+  width: 100%;
+}
+
+tr td {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+}
+
+.double-width {
+  width: 144px;
+}
+
+button {
+  color: white;
+  font-style: bold;
+  font-size: 1.2em;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-color: black;
+}
+
+.th {
+  display: inline-block;
+  width: 100%;
+  height: 35px;
+}
+
+.dark-grey {
+  background-color: rgb(40, 41, 4);
+}
+.white {
+  color: white;
+  font-size: 1.4em;
+}
