@@ -1,5 +1,48 @@
-*{
-    box-sizing: border-box;
-    /* margin: 0;
+* {
+  box-sizing: border-box;
+  /* margin: 0;
     padding: 0; */
+}
+
+div p {
+  color: red;
+}
+
+div div > p {
+  font-style: italic;
+}
+
+li:nth-child(n) {
+  color: green;
+}
+
+.fl::first-letter {
+  color: red;
+  font-size: 2em;
+}
+
+.fl:after {
+  content: "<!DOCTYPE html><body><a href="">Hi</a>";
+  color: blue;
+}
+
+.float-left{
+    float: left;
+
+}
+
+.float-right{
+    float: right;
+
+}
+
+.size{
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+p{
+    text-align: justify;
 }

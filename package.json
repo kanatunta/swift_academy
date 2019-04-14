@@ -1,0 +1,23 @@
+{
+  "name": "petar_nenov_swift_academy",
+  "version": "1.0.0",
+  "description": "## Lectures, homeworks and resusrses",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petarnenov/petar_nenov_swift_academy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petarnenov/petar_nenov_swift_academy/issues"
+  },
+  "homepage": "https://github.com/petarnenov/petar_nenov_swift_academy#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  }
+}
