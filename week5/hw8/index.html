@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>HW 8</title>
+  </head>
+  <body>
+    <h1>HW 8</h1>
+
+    <div onclick="getButtonValue()" class="flex-container">
+      <div class="result">
+        <input
+          id="results"
+          type="text"
+          placeholder="show results"
+          size="30"
+          disabled
+          class="results dark"
+        />
+      </div>
+
+      <div><button type="button" class="black" value="1">1</button></div>
+      <div><button type="button" class="black" value="2">2</button></div>
+      <div><button type="button" class="black" value="3">3</button></div>
+      <div><button type="button" class="dark" value="+">+</button></div>
+
+      <div><button type="button" class="black" value="4">4</button></div>
+      <div><button type="button" class="black" value="5">5</button></div>
+      <div><button type="button" class="black" value="6">6</button></div>
+      <div><button type="button" class="dark" value="-">-</button></div>
+
+      <div><button type="button" class="black" value="7">7</button></div>
+      <div><button type="button" class="black" value="8">8</button></div>
+      <div><button type="button" class="black" value="9">9</button></div>
+      <div><button type="button" class="dark" value="*">x</button></div>
+
+      <div><button type="button" class="dark" value="c">c</button></div>
+      <div><button type="button" class="dark" value="0">0</button></div>
+      <div><button type="button" class="dark" value="=">=</button></div>
+      <div><button type="button" class="dark" value="/">/</button></div>
+      <div><button type="button" class="dark" value="(">(</button></div>
+
+      <div><button type="button" class="dark" value=")">)</button></div>
+
+      <div>
+        <button type="button" class="double-width dark" value="<--">
+          BackSpace
+        </button>
+      </div>
+    </div>
+
+    <script>
+      const results = document.getElementById('results');
+      const values = [];
+      const getButtonValue = () => {
+        const value = event.target.value;
+        if (value !== '=' && value !== 'c' && value !== '<--') {
+          values.push(value);
+        }
+        if (value === '=') {
+          const result = eval(results.value);
+          results.value = result;
+          values.length = 0;
+          values.push(result);
+        }
+        if (value === '<--') {
+          values.pop();
+        }
+        if (value === 'c') {
+          values.length = 0;
+        }
+        results.value = values.join('');
+      };
+    </script>
+  </body>
+</html>
