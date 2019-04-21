@@ -1,0 +1,93 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+}
+
+#main .content {
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  top: 50%;
+  transform: translate(0 -50%);
+  font-size: 24pt;
+}
+
+#main .topleft {
+  display: inline-block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0px;
+  left: 0px;
+  background: red;
+  /* write here */
+  transition: transform-origin 2s, transform 2s;
+}
+
+#main .topright {
+  display: inline-block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0px;
+  left: 100px;
+  background: yellow;
+  /* write here */
+  transition: transform-origin 2s, transform 2s;
+}
+
+#main .bottomleft {
+  display: inline-block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 0px;
+  top: 100px;
+  background: blue;
+  /* write here */
+  transition: transform-origin 2s, transform 2s;
+}
+
+#main .bottomright {
+  display: inline-block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 100px;
+  top: 100px;
+  background: green;
+  /* write here */
+  transition: transform-origin 2s, transform 2s;
+}
+
+#main:hover .topleft {
+  /* write here */
+  transform-origin: top left;
+  transform: rotate(90deg);
+}
+
+#main:hover .topright {
+  /* write here */
+  transform-origin: top right;
+  transform: rotate(-90deg);
+}
+
+#main:hover .bottomleft {
+  /* write here */
+  transform-origin: bottom left;
+  transform: rotate(-90deg);
+}
+
+#main:hover .bottomright {
+  /* write here */
+  transform-origin: bottom right;
+  transform: rotate(90deg);
+}
