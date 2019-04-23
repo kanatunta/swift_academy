@@ -1,0 +1,16 @@
+@import "./lib.less";
+
+.border-radius(@radius: 5px) {
+    border-radius: @radius;
+    color: darken(@color,50%);
+}
+
+.colors(@color: red,@bgcolor: blue) {
+    color: lighten(@color,5%);
+    background-color: darken(@bgcolor,5%);
+}
+
+h1 {
+    .colors(pink,pink);
+    font-size: @size;
+    }

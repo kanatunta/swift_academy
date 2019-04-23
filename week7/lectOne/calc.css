@@ -1,0 +1,39 @@
+h1 {
+  text-align: center;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 300px;
+  height: calc(300px + 100px);
+  border: 1px solid grey;
+  margin: auto;
+}
+.result {
+  flex: 1 1 100%;
+  color: red;
+}
+div div {
+  flex: 1 1 calc(100%/4);
+}
+button {
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.results {
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.black {
+  background-color: black;
+}
+.dark {
+  background-color: #333333;
+}
