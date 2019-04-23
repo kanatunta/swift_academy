@@ -1,0 +1,30 @@
+/* @import url('https://fonts.googleapis.com/css?family=Cute+Font'); */
+/* @import url("./CuteFont-Regular.ttf"); */
+
+@font-face {
+  font-family: 'Cute Font';
+  src: url('./CuteFont-Regular.ttf') format('truetype');
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  p {
+    color: red;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.center {
+  text-align: center;
+}
+
+.div {
+  display: flex;
+}
+
+p {
+  font-size: 3em;
+  font-family: 'Cute Font', cursive;
+}
