@@ -1,0 +1,50 @@
+@default-color: black;
+@default-size: 100%;
+@default-width: 300px;
+
+h1 {
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: @default-width;
+    height: calc(@default-width + 100px);
+    border: 1px solid grey;
+    margin: auto;
+}
+
+.result {
+    flex: 1 1 @default-size;
+    color: red;
+}
+
+div div {
+    flex: 1 1 calc(@default-size / 4);
+}
+
+button {
+    width: @default-size;
+    height: @default-size;
+    color: lighten(@default-color, 100%);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.results {
+    width: @default-size;
+    height: @default-size;
+    color: lighten(@default-color, 100%);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.black {
+    background-color: @default-color;
+}
+
+.dark {
+    background-color: lighten(@default-color, 20%);
+}

@@ -1,23 +1,33 @@
 {
-  "name": "petar_nenov_swift_academy",
-  "version": "1.0.0",
-  "description": "## Lectures, homeworks and resusrses",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/petarnenov/petar_nenov_swift_academy.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/petarnenov/petar_nenov_swift_academy/issues"
-  },
-  "homepage": "https://github.com/petarnenov/petar_nenov_swift_academy#readme",
-  "devDependencies": {
-    "eslint": "^5.16.0"
-  }
+    "name": "petar_nenov_swift_academy",
+    "version": "1.0.0",
+    "description": "## Lectures, homeworks and resusrses",
+    "main": "index.js",
+    "scripts": {
+        "start": "ts-node ./week7/ts/index.ts",
+        "less": "lessc ./week7/lectOne/calc.less ./week7/lectOne/calc.css",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/petarnenov/petar_nenov_swift_academy.git"
+    },
+    "keywords": [],
+    "author": "Petar Nenov",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/petarnenov/petar_nenov_swift_academy/issues"
+    },
+    "homepage": "https://github.com/petarnenov/petar_nenov_swift_academy#readme",
+    "devDependencies": {
+        "@types/node": "^11.13.7",
+        "eslint": "^5.16.0",
+        "less": "^3.9.0",
+        "node-less": "^1.0.0",
+        "typescript": "^3.4.4"
+    },
+    "dependencies": {
+        "g": "^2.0.1",
+        "ts-node": "^8.1.0"
+    }
 }

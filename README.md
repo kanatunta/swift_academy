@@ -8,3 +8,9 @@
 eval $(ssh-agent -s)
 ssh-add ~/.ssh/id_rsa_hp
 ```
+
+## To use less
+
+```bash
+npm run less
+```
