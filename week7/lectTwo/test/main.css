@@ -1,0 +1,27 @@
+.header {
+    background-color: blueviolet;
+}
+
+li{
+    list-style: none;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;   
+}
+
+.menu-item{
+    display: flex;
+    flex-direction: row; 
+    
+}
+
+.center{
+    align-items: center;       
+}
+
+
+
+

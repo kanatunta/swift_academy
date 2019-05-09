@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Контролен тест- Петър Ненов</title>
+        <style type="text/css">
+            body {
+                font-family: Arial;
+            }
+            .container {
+                margin: 30px auto;
+                max-width: 800px;
+            }
+            .instr {
+                color: #d67208;
+            }
+            .instr em {
+                font-size: 1.1rem;
+                font-weight: bold;
+            }
+            p {
+                font-size: 1.1rem;
+                color: #00a295;
+            }
+            li {
+                padding: 10px;
+            }
+            li > label {
+                margin: 1px 0;
+                padding: 5px;
+                display: block;
+                border-radius: 4px;
+                background: #def0ff;
+                cursor: pointer;
+            }
+            li > label:first-of-type {
+                margin-top: 10px;
+            }
+            li > label:hover {
+                background: #d0e9ff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Контролен тест</h1>
+            <div class="instr">
+                <strong>ИНСТРУКЦИИ</strong><br />
+                <strong>Затворени въпроси:</strong> Изберете правилния отговор
+                като добавите html атрибут <em>checked</em> на правилното място
+                и запазите промените в html файла.<br />
+                <strong>Отворени въпроси:</strong> Напишете отговорът на
+                указаното място в html файла.<br />
+                <strong>Предаване на теста:</strong> Изпращате ми го на имейл.
+            </div>
+            <ol>
+                <li>
+                    <!-- Затворен въпрос -->
+                    Кое от изброените се използва за дефиниране на специално
+                    състояние на даден елемент?
+                    <label><input type="radio" name="a" /> Alignment</label>
+                    <label><input type="radio" name="a" checked /> Style</label>
+                    <label><input type="radio" name="a" /> Pseudo-class</label>
+                    <label><input type="radio" name="a" /> Syntax</label>
+                </li>
+
+                <li>
+                    <!-- Затворен въпрос -->
+                    Как се нарича елемент, който започва на същия ред и заема
+                    само толкова място, колкото му е нужно?
+                    <label><input type="radio" name="b" /> Line</label>
+                    <label><input type="radio" name="b" /> Spacer</label>
+                    <label><input type="radio" name="b" /> Inline</label>
+                    <label
+                        ><input type="radio" name="b" checked />
+                        Block-Level</label
+                    >
+                </li>
+
+                <li>
+                    <!-- Затворен въпрос -->
+                    Как се нарича стойността, която дефинира цвят по следния
+                    начин: #FFFF00?
+                    <label
+                        ><input type="radio" name="c" checked /> Hex
+                        Value</label
+                    >
+                    <label><input type="radio" name="c" /> Decimal Value</label>
+                    <label><input type="radio" name="c" /> RGB Value</label>
+                    <label><input type="radio" name="c" /> Color Value</label>
+                </li>
+
+                <li>
+                    <!-- Затворен въпрос -->
+                    Кое CSS пропърти определя размера на празното пространство
+                    извън границите на съдържанието на даден елемент?
+                    <label><input type="radio" name="d" /> Padding</label>
+                    <label><input type="radio" name="d" /> Spacer</label>
+                    <label><input type="radio" name="d" /> Line</label>
+                    <label
+                        ><input type="radio" name="d" checked /> Margin</label
+                    >
+                </li>
+
+                <li>
+                    <!-- Затворен въпрос -->
+                    Кое е най-важното CSS пропърти когато говорим за
+                    контролиране на layout?
+                    <label><input type="radio" name="e" /> Margin</label>
+                    <label><input type="radio" name="e" /> div</label>
+                    <label><input type="radio" name="e" /> Table</label>
+                    <label
+                        ><input type="radio" name="e" checked /> Display</label
+                    >
+                </li>
+
+                <li>
+                    <!-- Затворен въпрос -->
+                    Кое CSS пропърти ползваме, за да добавим празно пространство
+                    в границите на даден елемент?
+                    <label><input type="radio" name="f" /> Break (br)</label>
+                    <label
+                        ><input type="radio" name="f" checked /> Padding</label
+                    >
+                    <label><input type="radio" name="f" /> Cleaner</label>
+                    <label><input type="radio" name="f" /> Spacing</label>
+                </li>
+
+                <li>
+                    <!-- Затворен въпрос -->
+                    Кой е правилният начин да добавим външен stylesheet към html
+                    документ?
+                    <label
+                        ><input type="radio" name="g" />
+                        &lt;stylesheet&gt;mystyle.css&lt;/stylesheet&gt;</label
+                    >
+                    <label
+                        ><input type="radio" name="g" checked /> &lt;link
+                        rel="stylesheet" type="text/css"
+                        href="mystyle.css"&gt;</label
+                    >
+                    <label
+                        ><input type="radio" name="g" /> &lt;style
+                        rel="stylesheet" src="mystyle.css"&gt;</label
+                    >
+                    <label
+                        ><input type="radio" name="g" /> &lt;style
+                        src="mystyle.css"&gt;</label
+                    >
+                </li>
+
+                <li>
+                    <!-- Затворен въпрос -->
+                    Къде е правилното масто за добавяне на външен stylesheet към
+                    html документ?
+                    <label
+                        ><input type="radio" name="h" checked />
+                        &lt;head&gt;</label
+                    >
+                    <label><input type="radio" name="h" /> &lt;body&gt;</label>
+                    <label
+                        ><input type="radio" name="h" /> &lt;header&gt;</label
+                    >
+                    <label
+                        ><input type="radio" name="h" /> В края на
+                        документа</label
+                    >
+                </li>
+
+                <li>
+                    <!-- Затворен въпрос -->
+                    Кой е коректният синтаксис?
+                    <label
+                        ><input type="radio" name="i" />
+                        body:color=black;</label
+                    >
+                    <label
+                        ><input type="radio" name="i" checked /> body {color:
+                        black;}</label
+                    >
+                    <label
+                        ><input type="radio" name="i" />
+                        {body;color:black;}</label
+                    >
+                    <label
+                        ><input type="radio" name="i" />
+                        {body:color=black;}</label
+                    >
+                </li>
+
+                <li>
+                    <!-- Затворен въпрос -->
+                    Как добавяме коментар в CSS файл?
+                    <label
+                        ><input type="radio" name="j" /> // this is a
+                        comment</label
+                    >
+                    <label
+                        ><input type="radio" name="j" /> // this is a comment
+                        //</label
+                    >
+                    <label
+                        ><input type="radio" name="j" checked /> /* this is a
+                        comment */</label
+                    >
+                    <label
+                        ><input type="radio" name="j" /> ' this is a
+                        comment</label
+                    >
+                </li>
+
+                <li>
+                    <!-- Затворен въпрос -->
+                    Как бихме добавили бял фон на всички &lt;h1&gt; елементи в
+                    документа?
+                    <label
+                        ><input type="radio" name="k" /> .h1 {background-color:
+                        #FFFFFF;}</label
+                    >
+                    <label
+                        ><input type="radio" name="k" /> h1:all
+                        {background-color: #FFFFFF;}</label
+                    >
+                    <label
+                        ><input type="radio" name="k" /> h1.all
+                        {background-color: #FFFFFF;}</label
+                    >
+                    <label
+                        ><input type="radio" name="k" checked /> h1
+                        {background-color: #FFFFFF;}</label
+                    >
+                </li>
+
+                <li>
+                    <!-- Затворен въпрос -->
+                    Кое CSS property контролира цвета на текста на даден
+                    елемент?
+                    <label><input type="radio" name="l" checked /> color</label>
+                    <label><input type="radio" name="l" /> bgcolor</label>
+                    <label><input type="radio" name="l" /> text-color</label>
+                    <label><input type="radio" name="l" /> background</label>
+                </li>
+
+                <li>
+                    <!-- Затворен въпрос -->
+                    Кое CSS property контролира размера на текста на даден
+                    елемент?
+                    <label><input type="radio" name="m" /> text-style</label>
+                    <label><input type="radio" name="m" /> font-style</label>
+                    <label
+                        ><input type="radio" name="m" checked />
+                        font-size</label
+                    >
+                    <label><input type="radio" name="m" /> text-size</label>
+                </li>
+
+                <li>
+                    <!-- Отворен въпрос -->
+                    С какъв CSS можем да премахнем подчертавката на хиперлинк?
+                    <p>text-decoration:none</p>
+                </li>
+
+                <li>
+                    <!-- Отворен въпрос -->
+                    С кое CSS property променяме шрифта на даден елемент
+                    (примерно на Arial)?
+                    <p>font-family: Arial</p>
+                </li>
+
+                <li>
+                    <!-- Отворен въпрос -->
+                    С какъв CSS можем да сложим следните граници на даден
+                    елемент:<br />
+                    top border = 10 pixels<br />
+                    bottom border = 5 pixels<br />
+                    left border = 20 pixels<br />
+                    right border = 1 pixel
+                    <p>
+                        border-top: 10px border-bottom :5px border-left: 20px
+                        border-right: 1px
+                    </p>
+                </li>
+
+                <li>
+                    <!-- Затворен въпрос -->
+                    Когато ползваме padding можем ли да даваме негативни числа
+                    за стойност?
+                    <label><input type="radio" name="n" /> Да</label>
+                    <label><input type="radio" name="n" checked /> Не</label>
+                </li>
+
+                <li>
+                    <!-- Затворен въпрос -->
+                    Когато ползваме margin можем ли да даваме негативни числа за
+                    стойност?
+                    <label><input type="radio" name="o" checked /> Да</label>
+                    <label><input type="radio" name="o" /> Не</label>
+                </li>
+
+                <li>
+                    <!-- Затворен въпрос -->
+                    &lt;ul class="shopping-list" id="awesome"&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;span&gt;Milk&lt;/span&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&lt;li class="favorite"
+                    id="must-buy"&gt;&lt;span
+                    class="highlight"&gt;Sausage&lt;/span&gt;&lt;/li&gt;<br />
+                    &lt;/ul&gt;<br /><br />
+                    ul li { color: red; }<br />
+                    #must-buy { color: blue; }<br /><br />
+                    Какъв ще е цветът на текста "Sausage"?
+                    <label><input type="radio" name="p" checked /> Blue</label>
+                    <label><input type="radio" name="p" /> Red</label>
+                    <label><input type="radio" name="p" /> Neither</label>
+                </li>
+
+                <li>
+                    <!-- Затворен въпрос -->
+                    &lt;ul class="shopping-list" id="awesome"&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;span&gt;Milk&lt;/span&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&lt;li class="favorite"
+                    id="must-buy"&gt;&lt;span
+                    class="highlight"&gt;Sausage&lt;/span&gt;&lt;/li&gt;<br />
+                    &lt;/ul&gt;<br /><br />
+                    #awesome .favorite:not(#awesome) .highlight { color: red;
+                    }<br />
+                    #awesome .highlight:nth-of-type(1) { color: blue; }<br /><br />
+                    Какъв ще е цветът на текста "Sausage"?
+                    <label><input type="radio" name="pe" /> Blue</label>
+                    <label><input type="radio" name="pe" checked /> Red</label>
+                    <label><input type="radio" name="pe" /> Neither</label>
+                </li>
+            </ol>
+        </div>
+    </body>
+</html>

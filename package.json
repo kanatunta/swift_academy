@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "start": "ts-node ./week7/ts/index.ts",
-        "less": "lessc ./week7/lectOne/calc.less ./week7/lectOne/calc.css",
+        "less": "lessc ./week7/lectTwo/index.less ./week7/lectTwo/index.css",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {

@@ -1,0 +1,70 @@
+* {
+    font-family: Muli sans-serif;
+    font-size: 16px;
+    color: #333333;
+}
+
+main {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex: 0 0 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #c1e0ff;
+}
+
+h1,
+h2 {
+    font-family: Lora;
+    text-align: center;
+}
+h1 {
+    font-size: 32px;
+}
+h2 {
+    font-size: 28px;
+}
+
+input {
+    border: 2px solid red;
+}
+
+input[type='submit'] {
+    background-color: #347dc6;
+    border: 2px solid #347dc6;
+}
+
+footer {
+    color: #347dc6;
+}
+
+.sections {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+img {
+    width: 100px;
+}
+
+.red{
+    color: red;
+}
+
+.blue{
+    color: blue;
+}
+
+.yellow{
+    color: yellow;
+}

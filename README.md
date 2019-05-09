@@ -4,6 +4,8 @@
 
 ## To authentificate via ssh
 
+
+
 ```bash
 eval $(ssh-agent -s)
 ssh-add ~/.ssh/id_rsa_hp
@@ -12,5 +14,6 @@ ssh-add ~/.ssh/id_rsa_hp
 ## To use less
 
 ```bash
+npm install
 npm run less
 ```

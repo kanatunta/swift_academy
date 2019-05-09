@@ -1,0 +1,8 @@
+h1 {
+    text-align: center;
+    border-style: solid;
+    border-width:1 20 10 5;
+}
+
+#awesome .favorite:not(#awesome) .highlight { color: red; }
+#awesome .highlight:nth-of-type(1) { color: blue; }
