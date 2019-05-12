@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>HomeWork13</title>
+    </head>
+    <body>
+        <h1>HomeWork13</h1>
+        <section id="task1">
+            <h2>Task 1</h2>
+            <p>
+                Напишете функция, която приема един входен параметър, проверява
+                дали стойността му е от тип number и връща true или false.
+                Примерен резултат: checkIsNumber(4) => true
+                checkIsNumber("ball") => false
+            </p>
+            <label for="inputNumber">Input number</label>
+            <input
+                id="inputNumber"
+                type="text"
+                placeholder="input number"
+                value=""
+                onclick="clearResultField()"
+            />
+            <input
+                id="buttonTaskOne"
+                type="button"
+                onclick="pressButtonTaskOne()"
+                value="Check"
+            />
+            <label for="resultIsNumber">Result</label>
+            <input
+                id="resultIsNumber"
+                type="text"
+                placeholder="result"
+                value=""
+                disabled
+            />
+            <br />
+        </section>
+        <hr />
+        <section id="task2">
+            <h2>Task 2</h2>
+            <p>
+                Напишете функция, която приема два произволни string-a като
+                входни параметри и връща като резултат разликата в броя символи
+                на двата string-а. Резултатът никога не трябва да е отрицателно
+                число. Примерен резултат: diff("football", "ball") => 4
+            </p>
+            <label for="stringOne">String</label>
+            <input
+                id="stringOne"
+                type="text"
+                value=""
+                onclick='(()=>{
+                    this.value="";
+                    clearResultDiffranceLenght();
+                    })()'
+                placeholder="string one"
+            />
+            <br />
+            <label for="stringTwo">String</label>
+            <input
+                id="stringTwo"
+                type="text"
+                value=""
+                onclick='(()=>{
+                    this.value="";
+                    clearResultDiffranceLenght();
+                    })()'
+                placeholder="string two"
+            />
+            <br />
+            <input
+                type="button"
+                onclick="pressButtonTaskTwo()"
+                value="Show length diffrence between two of them"
+            />
+            <input
+                id="resultDiffranceLenght"
+                type="text"
+                placeholder="diffrance"
+                disabled
+            />
+        </section>
+        <hr />
+        <section id="task3">
+            <h2>Task3</h2>
+            <p>
+                Задача за домашно (1) Напишете функция area(), която получава
+                три аргумента (a, b и c) и смята площта на следната фигура: (2)
+                Функцията трябва да връща правилният резултат при всяко
+                извикване. (3) Примери: (1)area(10, 6, 10); // => 80 (2)area(2,
+                1, 3); // => 4 (3)area(10, 6, 10); // => 80 Формулата за площ на
+                правоъгълник е едната страна по другата (a*b), а на триъгълник е
+                едната страна по височината, делено на 2*(a*(c-b)/2)
+            </p>
+            <p>
+                Look at to console logging ;)
+            </p>
+        </section>
+        <hr />
+        <script src="./index.js"></script>
+    </body>
+</html>
