@@ -70678,12 +70678,22 @@ window.onload = e => {
     document.body.appendChild(h);
 };
 
+let clickCounter = 0;
+const colors = [
+    'lightgrey',
+    'lightpink',
+    'lightgreen',
+    'lightblue',
+    'cornsilk',
+    'sandybrown',
+    'skyblue'
+];
+
 document.addEventListener('click', e => {
-    console.log('click captured');
-    document.body.style.backgroundColor =
-        document.body.style.backgroundColor === 'lightgrey'
-            ? 'white'
-            : 'lightgrey';
+    const color = colors[clickCounter % colors.length];
+    console.log(`click captured, set color to:${color}`);
+    clickCounter++;
+    document.body.style.backgroundColor = color;
 });
 
 document.addEventListener('DOMContentLoaded', () => {
