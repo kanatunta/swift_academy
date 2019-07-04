@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./style.css" />
+        <script>
+            //JS task 7
+            function Change() {
+                const li = document.getElementsByClassName('login')[0];
+                const lo = document.getElementsByClassName('logout')[0];
+                li.style = 'display:none';
+                lo.style = 'display:inline';
+            }
+        </script>
+        <style>
+            @keyframes example {
+                from {
+                    background-color: red;
+                }
+                to {
+                    border-radius: 50%;
+                    background-color: blue;
+                }
+            }
+
+            .toBeAnimated {
+                width: 20px;
+                height: 20px;
+                background-color: red;
+                animation-name: example;
+                animation-duration: 2s;
+            }
+        </style>
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Examine</h1>
+        <h2>HTML</h2>
+        <h3>task 4</h3>
+        <form >
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" />
+            <br />
+            <label for="password">Password</label>
+            <input id="password" type="text" name="password" />
+            <br />
+            <label for="remember">Remember me</label>
+            <input id="remember" type="checkbox" name="checkbox" />
+            <br />
+            <input type="submit" name="Submit" />
+        </form>
+        <div class="elementWrapper">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li class="kindOfPi">3</li>
+                <li>4</li>
+            </ul>
+            <span>
+                <div>
+                    <input type="number" />
+                </div>
+                <input type="text" />
+                <input type="number" />
+                <input type="text" />
+                <input type="number" />
+            </span>
+        </div>
+        <h2>CSS</h2>
+        <h3>task 3</h3>
+        <br />
+        <div class="toBeAnimated"></div>
+        <h2>JS</h2>
+        <h3>task 7</h3>
+        <button class="Wrapperelement" onclick="Change()">
+            <div class="login">Login</div>
+            <div class="logout" style="display:none">Logout</div>
+        </button>
+        <script>
+            //JS task 2
+            const img1 = document.createElement('img');
+            img1.src = 'Images/logo.png';
+            img1.alt = 'the logo of the company';
+            document.body.appendChild(img1);
+        </script>
+        <script>
+            //JS task 3
+            const selectEveryDivWithoutClassWrapper = Array.from(document.getElementsByTagName("div")).filter(d=>d.className!=="wrapper");
+            console.log(selectEveryDivWithoutClassWrapper);
+            
+            const selectULIdInnerList = document.getElementById("innerList")
+            console.log(selectULIdInnerList);
+        </script>
+    </body>
+</html>

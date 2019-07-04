@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.logo {
+    height: 30px;
+}
+
+.header-container {
+    flex-grow: 1;
+    font-size: 1.2rem;
+    background-color: white;
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    background-color: antiquewhite;
+}
+
+.container-main {
+    background-color: lightgray;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.container-main h1 {
+    font-size: 4rem;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+nav,
+ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav,
+ul li a {
+    transition: 0.9;
+    color: lightskyblue;
+    text-decoration: none;
+}
+
+.overlay {
+    position: absolute;
+    
+}
